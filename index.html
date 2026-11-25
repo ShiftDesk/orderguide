@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Guide — Support & Privatlivspolitik</title>
+    <meta name="description" content="Support og privatlivspolitik for Order Guide — bestilling og egenkontrol til restauranter. Support and privacy policy for Order Guide.">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -127,6 +128,8 @@
         p { margin-bottom: 14px; font-size: 15px; color: #3A3530; }
         ul { margin: 10px 0 14px 20px; }
         li { font-size: 15px; color: #3A3530; margin-bottom: 6px; }
+        a.inline { color: #B54533; }
+        .updated { color: #8A8070; font-size: 14px; margin-bottom: 8px; }
         .highlight {
             background: #EAE4DC;
             border-left: 3px solid #B54533;
@@ -146,6 +149,7 @@
         .contact-card a { color: #B54533; text-decoration: none; }
         .lang-switch { text-align: right; margin-bottom: 24px; }
         .lang-switch a { color: #B54533; text-decoration: none; font-size: 13px; }
+        .section-title { font-family: Georgia, serif; font-size: 28px; margin-bottom: 6px; }
         hr.divider { border: none; border-top: 1px solid #DDD8D0; margin: 40px 0; }
 
         footer {
@@ -158,7 +162,7 @@
 
         @media (prefers-color-scheme: dark) {
             body { background: #1A1814; color: #F5F0EB; }
-            h1, h2 { color: #F5F0EB; }
+            h1, h2, .section-title { color: #F5F0EB; }
             p, li { color: #C8C0B0; }
             .highlight { background: #2A2420; }
             .contact-card, .support-card { background: #242018; border-color: #3A3530; }
@@ -178,18 +182,22 @@
     <header>
         <div class="logo">O</div>
         <h1>Order Guide</h1>
-        <p class="subtitle">Support & Privatlivspolitik</p>
+        <p class="subtitle">Support & Privatlivspolitik · Support & Privacy Policy</p>
     </header>
 
     <div class="nav-tabs">
-        <a href="#" class="active" onclick="showSection('support', this); return false;">🛟 Support</a>
-        <a href="#" onclick="showSection('privacy', this); return false;">🔒 Privatlivspolitik</a>
+        <a href="#support" class="active" onclick="showSection('support', this); return false;">🛟 Support</a>
+        <a href="#privacy" onclick="showSection('privacy', this); return false;">🔒 Privatliv / Privacy</a>
     </div>
 
     <!-- ══════════════════════════════════ -->
-    <!-- SUPPORT -->
+    <!-- SUPPORT — DANSK -->
     <!-- ══════════════════════════════════ -->
     <div id="support" class="section active">
+
+        <div class="lang-switch">
+            <a href="#" onclick="scrollToId('support-en'); return false;">🇬🇧 English version below</a>
+        </div>
 
         <div class="support-card">
             <div class="badge">Kom i gang</div>
@@ -198,201 +206,307 @@
             <ul>
                 <li>Indtast dit restaurantnavn</li>
                 <li>Opret en 4-cifret admin PIN</li>
-                <li>Tilføj eventuelt din e-mail til PIN-nulstilling</li>
-                <li>Tilføj medarbejdere under Indstillinger → Medarbejdere</li>
+                <li>Skriv din gendannelseskode ned — den vises kun én gang</li>
+                <li>Start din gratis prøveperiode via App Store</li>
+                <li>Tilføj medarbejdere og leverandører under Indstillinger</li>
             </ul>
-            <p>Når opsætningen er færdig, kan medarbejdere logge ind med deres personlige PIN og begynde at melde varer til indkøbslisten.</p>
+            <p>Herefter kan medarbejderne logge ind med deres personlige PIN og begynde at melde varer til indkøbslisten.</p>
         </div>
 
         <div class="support-card">
             <div class="badge">Admin & Indstillinger</div>
-            <h3>Admin-adgang</h3>
-            <p>Tryk på <strong>Admin Login</strong> på login-skærmen og indtast din 4-cifrede admin PIN for at åbne admin-panelet.</p>
-            <p>Indstillinger er beskyttet — medarbejdere og køkkenchefer skal indtaste admin PIN for at åbne Indstillinger.</p>
-            <p>Hvis du har glemt din admin PIN, tryk på <strong>Glemt PIN?</strong> på admin login-skærmen for at modtage et nulstillingslink på e-mail.</p>
+            <h3>Admin-adgang og glemt PIN</h3>
+            <p>Tryk på <strong>Admin login</strong> på login-skærmen og indtast din 4-cifrede admin PIN for at åbne admin-panelet. Indstillinger er beskyttet med admin PIN.</p>
+            <p>Har du glemt din admin PIN, tryk på <strong>Glemt PIN?</strong> og indtast din <strong>gendannelseskode</strong>. Du fik koden, da admin PIN'en blev oprettet. Du kan lave en ny kode under <strong>Indstillinger → Gendannelseskode</strong>.</p>
+            <p>Har du endnu ingen gendannelseskode, bekræfter du i stedet med enhedens egen kode eller Face ID.</p>
         </div>
 
         <div class="support-card">
             <div class="badge">Køkken & Bestillinger</div>
             <h3>Send bestillinger til leverandører</h3>
-            <p>Køkkenchefer og ejere kan se den fulde indkøbsliste under fanen <strong>Køkken</strong>. Tryk på <strong>Gennemse</strong> for at gennemse og sende bestillinger til hver leverandør via e-mail, WhatsApp eller SMS.</p>
-            <p>Medarbejdere kan melde varer de mangler — disse vises straks i indkøbslisten.</p>
+            <p>Køkkenchefer og ejere ser den fulde indkøbsliste under fanen <strong>Køkken</strong>. Tryk på <strong>Gennemse</strong> for at sende bestillingen til hver leverandør via e-mail, SMS eller WhatsApp.</p>
+            <p>Tilføj dine leverandørers e-mail og telefon under <strong>Indstillinger → Leverandører</strong>. Ordrer sendes kun til de kontakter, du selv har gemt.</p>
+        </div>
+
+        <div class="support-card">
+            <div class="badge">Egenkontrol</div>
+            <h3>Temperaturlog og rapport til fødevarekontrollen</h3>
+            <p>Registrér temperatur og antal kolli ved hver varemodtagelse under <strong>Admin → Varemodtagelse</strong>. Varer over 5°C markeres tydeligt.</p>
+            <p>Tryk på <strong>Rapport til fødevarekontrollen (PDF)</strong> og vælg periode. Du får en PDF med alle modtagelser, afviste varer og en underskriftslinje.</p>
+        </div>
+
+        <div class="support-card">
+            <div class="badge">Backup</div>
+            <h3>iCloud-backup og ny iPad</h3>
+            <p>Appen tager automatisk en backup af dine data til din egen private iCloud. Du kan også trykke <strong>Indstillinger → Tag backup nu</strong>.</p>
+            <p>På en ny iPad: log ind med samme Apple-ID og installer appen. Appen tilbyder at hente din backup — eller brug <strong>Indstillinger → Gendan fra backup</strong>. PIN-koder er ikke med i backup'en, så medarbejderne skal have en ny PIN.</p>
         </div>
 
         <div class="support-card">
             <div class="badge">Abonnement</div>
             <h3>Gratis prøveperiode & abonnement</h3>
-            <p>Order Guide inkluderer en <strong>14-dages gratis prøveperiode</strong> — intet kreditkort påkrævet.</p>
-            <p>Efter prøveperioden kræves et abonnement. Du kan abonnere månedligt eller årligt direkte i appen.</p>
-            <p>For at opsige, gå til <strong>Indstillinger → Apple ID → Abonnementer</strong> på din iPhone.</p>
+            <p>Nye brugere kan prøve Order Guide <strong>gratis i 14 dage</strong> via App Store. Prøveperioden kræver et Apple-ID med en betalingsmetode.</p>
+            <p>Efter prøveperioden fornyes abonnementet automatisk (månedligt eller årligt), indtil du opsiger det.</p>
+            <p>For at opsige, gå til <strong>Indstillinger → [dit navn] → Abonnementer</strong> på din iPhone eller iPad. Opsig senest 24 timer før perioden slutter.</p>
         </div>
 
         <div class="support-card">
             <div class="badge">Data & Privatliv</div>
             <h3>Dine data</h3>
-            <p>Alle dine data gemmes på din enhed og synkroniseres via iCloud. Vi driver ikke egne servere og deler aldrig dine data med tredjeparter.</p>
-            <p>For at slette alle data, afinstaller appen og slet iCloud-data under <strong>Indstillinger → Apple ID → iCloud → Administrer lagerplads</strong>.</p>
-            <p><a href="#" onclick="showSection('privacy', document.querySelectorAll('.nav-tabs a')[1]); return false;" style="color:#B54533; font-weight:600;">Læs vores fulde privatlivspolitik →</a></p>
+            <p>Dine data gemmes på din enhed og i din egen private iCloud. Vi driver ikke egne servere og kan ikke se dine data.</p>
+            <p>For at slette alle data: afinstaller appen og slet appens iCloud-data under <strong>Indstillinger → [dit navn] → iCloud → Administrer lagerplads</strong>.</p>
+            <p><a href="#privacy" onclick="showSection('privacy', document.querySelectorAll('.nav-tabs a')[1]); return false;" style="color:#B54533; font-weight:600;">Læs vores fulde privatlivspolitik →</a></p>
         </div>
 
         <div class="cta-card">
             <h3>Brug for hjælp?</h3>
-            <p>Send os en e-mail og vi vender tilbage hurtigst muligt.</p>
-            <a href="mailto:support@menuguard.org">support@menuguard.org</a>
-        </div>
-
-    </div>
-
-    <!-- ══════════════════════════════════ -->
-    <!-- PRIVACY - DANISH -->
-    <!-- ══════════════════════════════════ -->
-    <div id="privacy" class="section">
-
-        <div class="lang-switch">
-            <a href="#" onclick="showSection('privacy', document.querySelectorAll('.nav-tabs a')[1]); setTimeout(function(){ document.getElementById('english').scrollIntoView(); }, 50); return false;">🇬🇧 English version below</a>
-        </div>
-
-        <h2>1. Hvem vi er</h2>
-        <p>Order Guide er en app til restauranter og køkkener, der hjælper med at styre indkøb, bestillinger og medarbejderkommunikation.</p>
-        <p>Har du spørgsmål til denne politik, er du velkommen til at kontakte os på <a href="mailto:support@menuguard.org" style="color:#B54533;">support@menuguard.org</a>.</p>
-
-        <h2>2. Hvilke data vi indsamler</h2>
-        <p>Order Guide indsamler udelukkende de data, du selv indtaster i appen:</p>
-        <ul>
-            <li><strong>Restaurantoplysninger</strong> — navn, adresse, CVR-nummer, telefonnummer og køkkenchefens navn</li>
-            <li><strong>Medarbejderdata</strong> — fornavn, initialer, rolle og en 4-cifret PIN-kode</li>
-            <li><strong>Bestillingsdata</strong> — varer, antal, noter og fotos du vedhæfter til bestillinger</li>
-            <li><strong>Admin e-mail</strong> — bruges udelukkende til at sende et nulstillingslink, hvis PIN-koden glemmes</li>
-            <li><strong>Abonnementsdata</strong> — håndteres af Apple via App Store og er underlagt Apples privatlivspolitik</li>
-        </ul>
-
-        <div class="highlight">
-            <p>📵 Vi indsamler <strong>ikke</strong> oplysninger om dine kunder, gæster eller slutbrugere. Vi indsamler ikke lokationsdata, kontakter, kamera- eller mikrofonadgang udover det du eksplicit giver tilladelse til i forbindelse med at vedhæfte et foto til en bestilling.</p>
-        </div>
-
-        <h2>3. Hvordan vi bruger dine data</h2>
-        <ul>
-            <li>Vise restaurantens navn på login-skærmen</li>
-            <li>Lade medarbejdere logge ind med PIN-kode</li>
-            <li>Sende bestillinger til leverandører via e-mail</li>
-            <li>Gemme og vise indkøbslister og ordrehistorik</li>
-            <li>Synkronisere data via iCloud, så det ikke går tabt ved reinstallation</li>
-        </ul>
-        <p>Vi sælger, deler eller videregiver <strong>aldrig</strong> dine data til tredjeparter til markedsføring eller analyse.</p>
-
-        <h2>4. Hvor data gemmes</h2>
-        <ul>
-            <li><strong>På din enhed</strong> — i appens lokale lager (UserDefaults og enhedens filsystem)</li>
-            <li><strong>iCloud Key-Value Store</strong> — Apples krypterede cloud-lager, der bruges til at synkronisere data på tværs af dine enheder og beskytte mod datatab ved enhedsskift eller reinstallation</li>
-        </ul>
-        <p>Data transmitteres udelukkende via Apples egne krypterede forbindelser. Vi driver ikke egne servere.</p>
-
-        <h2>5. Dine rettigheder (GDPR)</h2>
-        <ul>
-            <li><strong>Indsigt</strong> — få at vide, hvilke data vi har om dig</li>
-            <li><strong>Berigtigelse</strong> — rette forkerte oplysninger direkte i appen under Indstillinger</li>
-            <li><strong>Sletning</strong> — slette alle data ved at afinstallere appen og slette iCloud-data under Indstillinger → Apple ID → iCloud → Administrer lagerplads</li>
-            <li><strong>Dataportabilitet</strong> — eksportere dine ordredata via appens eksportfunktion</li>
-        </ul>
-        <p>Kontakt os på <a href="mailto:support@menuguard.org" style="color:#B54533;">support@menuguard.org</a> for at udøve dine rettigheder.</p>
-
-        <h2>6. Børn</h2>
-        <p>Order Guide er en B2B-app beregnet til brug af voksne i erhvervsmæssig sammenhæng. Appen er ikke rettet mod børn under 13 år, og vi indsamler ikke bevidst data fra børn.</p>
-
-        <h2>7. Ændringer til denne politik</h2>
-        <p>Vi opdaterer denne politik, hvis vi ændrer vores datapraksis. Væsentlige ændringer varsles i appen. Den aktuelle version er altid tilgængelig på denne side.</p>
-
-        <h2>8. Kontakt</h2>
-        <div class="contact-card">
-            <p><strong>Order Guide</strong></p>
-            <p>E-mail: <a href="mailto:support@menuguard.org">support@menuguard.org</a></p>
+            <p>Send os en e-mail, så vender vi tilbage hurtigst muligt (hverdage 09–17).</p>
+            <a href="mailto:support@chmays.app">support@chmays.app</a>
         </div>
 
         <hr class="divider">
 
-        <!-- ENGLISH -->
+        <!-- ══════════════════════════════════ -->
+        <!-- SUPPORT — ENGLISH -->
+        <!-- ══════════════════════════════════ -->
+        <div id="support-en"></div>
+        <p class="section-title">Support</p>
+        <p class="updated">Order Guide in English</p>
+
+        <div class="support-card">
+            <div class="badge">Getting started</div>
+            <h3>How to set up Order Guide</h3>
+            <p>The first time you open the app, a short setup guides you through:</p>
+            <ul>
+                <li>Enter your restaurant name</li>
+                <li>Create a 4-digit admin PIN</li>
+                <li>Write down your recovery code — it is shown only once</li>
+                <li>Start your free trial through the App Store</li>
+                <li>Add employees and suppliers under Settings</li>
+            </ul>
+            <p>Your staff can then log in with their own PIN and start reporting items to the shopping list. The app follows your device language (Danish or English) and can be changed under <strong>Settings → Sprog / Language</strong>.</p>
+        </div>
+
+        <div class="support-card">
+            <div class="badge">Admin & Settings</div>
+            <h3>Admin access and forgotten PIN</h3>
+            <p>Tap <strong>Admin login</strong> on the login screen and enter your 4-digit admin PIN to open the admin panel. Settings are protected by the admin PIN.</p>
+            <p>If you forgot your admin PIN, tap <strong>Forgot PIN?</strong> and enter your <strong>recovery code</strong>. You got the code when the admin PIN was created. You can make a new code under <strong>Settings → Recovery code</strong>.</p>
+            <p>If you don't have a recovery code yet, you confirm with the device passcode or Face ID instead.</p>
+        </div>
+
+        <div class="support-card">
+            <div class="badge">Kitchen & Orders</div>
+            <h3>Send orders to suppliers</h3>
+            <p>Head chefs and owners see the full shopping list in the <strong>Kitchen</strong> tab. Tap <strong>Review</strong> to send the order to each supplier by email, SMS or WhatsApp.</p>
+            <p>Add your suppliers' email and phone under <strong>Settings → Suppliers</strong>. Orders are only sent to the contacts you have saved yourself.</p>
+        </div>
+
+        <div class="support-card">
+            <div class="badge">Food safety</div>
+            <h3>Temperature log and report for the food inspector</h3>
+            <p>Log the temperature and number of packages for every delivery under <strong>Admin → Goods received</strong>. Deliveries over 5°C are clearly flagged.</p>
+            <p>Tap <strong>Report for the food inspector (PDF)</strong> and choose a period. You get a PDF with all deliveries, rejections and a signature line.</p>
+        </div>
+
+        <div class="support-card">
+            <div class="badge">Backup</div>
+            <h3>iCloud backup and a new iPad</h3>
+            <p>The app automatically backs up your data to your own private iCloud. You can also tap <strong>Settings → Back up now</strong>.</p>
+            <p>On a new iPad: sign in with the same Apple ID and install the app. The app offers to restore your backup — or use <strong>Settings → Restore from backup</strong>. PINs are not included in the backup, so employees need a new PIN.</p>
+        </div>
+
+        <div class="support-card">
+            <div class="badge">Subscription</div>
+            <h3>Free trial & subscription</h3>
+            <p>New users can try Order Guide <strong>free for 14 days</strong> through the App Store. The trial requires an Apple ID with a payment method.</p>
+            <p>After the trial, the subscription renews automatically (monthly or yearly) until you cancel it.</p>
+            <p>To cancel, go to <strong>Settings → [your name] → Subscriptions</strong> on your iPhone or iPad. Cancel at least 24 hours before the period ends.</p>
+        </div>
+
+        <div class="cta-card">
+            <h3>Need help?</h3>
+            <p>Email us and we'll get back to you as soon as possible (weekdays 09–17, Danish time).</p>
+            <a href="mailto:support@chmays.app">support@chmays.app</a>
+        </div>
+
+    </div>
+
+    <!-- ══════════════════════════════════ -->
+    <!-- PRIVACY — DANSK -->
+    <!-- ══════════════════════════════════ -->
+    <div id="privacy" class="section">
+
+        <div class="lang-switch">
+            <a href="#" onclick="scrollToId('english'); return false;">🇬🇧 English version below</a>
+        </div>
+
+        <p class="section-title">Privatlivspolitik</p>
+        <p class="updated">Order Guide · Senest opdateret: 25. november 2026</p>
+
+        <h2>1. Hvem vi er</h2>
+        <p>Order Guide er en app til restauranter og køkkener, der hjælper med indkøb, bestillinger, egenkontrol og medarbejderkommunikation. Appen udgives af chmays.app.</p>
+        <p>Har du spørgsmål til denne politik, kan du kontakte os på <a class="inline" href="mailto:support@chmays.app">support@chmays.app</a>.</p>
+
+        <h2>2. Hvilke data appen gemmer</h2>
+        <p>Order Guide gemmer udelukkende de data, du selv indtaster i appen:</p>
+        <ul>
+            <li><strong>Restaurantoplysninger</strong> — navn, adresse, CVR-nummer, telefonnummer, køkkenchefens navn og en kontakt-e-mail</li>
+            <li><strong>Medarbejderdata</strong> — navn, initialer, rolle og en 4-cifret PIN-kode (gemt krypteret og kun på enheden)</li>
+            <li><strong>Leverandørdata</strong> — navn, e-mail, telefon, CVR-nummer og leveringsdage for dine leverandører</li>
+            <li><strong>Bestillingsdata</strong> — varer, antal, noter og ordrehistorik</li>
+            <li><strong>Egenkontrol</strong> — temperaturlog og varemodtagelser med dato, leverandør, temperatur og noter</li>
+            <li><strong>Fakturaer, budgetter og lager</strong> — fakturaoplysninger, budget pr. leverandør, lagerstatus og årsopgørelser</li>
+            <li><strong>Fotos</strong> — billeder du selv tager eller vælger til varer og varemodtagelser</li>
+            <li><strong>Abonnementsdata</strong> — håndteres af Apple via App Store og er underlagt Apples privatlivspolitik</li>
+        </ul>
+
+        <div class="highlight">
+            <p>📵 Vi indsamler <strong>ikke</strong> oplysninger om dine kunder eller gæster. Vi indsamler ikke lokationsdata eller kontakter. Kameraet bruges kun, når du selv scanner en stregkode eller tager et foto. Face ID bruges kun til at bekræfte, at det er dig, når du nulstiller admin PIN — vi får aldrig adgang til dine Face ID-data.</p>
+        </div>
+
+        <h2>3. Hvordan data bruges</h2>
+        <ul>
+            <li>Vise restaurantens navn på login-skærmen</li>
+            <li>Lade medarbejdere logge ind med PIN-kode</li>
+            <li>Sende bestillinger til dine leverandører, når du selv trykker send (via din egen e-mail-, SMS- eller WhatsApp-app)</li>
+            <li>Gemme og vise indkøbslister, ordrehistorik, temperaturlog og rapporter</li>
+            <li>Tage backup til din egen iCloud, så data ikke går tabt ved enhedsskift eller reinstallation</li>
+        </ul>
+        <p>Vi sælger, deler eller videregiver <strong>aldrig</strong> dine data til tredjeparter. Der er ingen reklamer og ingen sporing i appen.</p>
+
+        <h2>4. Hvor data gemmes</h2>
+        <ul>
+            <li><strong>På din enhed</strong> — i appens lokale lager. PIN-koder gemmes krypteret og forlader aldrig enheden.</li>
+            <li><strong>iCloud-backup (CloudKit)</strong> — en backup af dine data i din egen private iCloud-database hos Apple. Kun du har adgang — vi kan ikke se den. PIN-koder er ikke med i backup'en.</li>
+            <li><strong>iCloud Key-Value Store</strong> — Apples lager, der bruges til at synkronisere grundoplysninger (restaurantnavn, medarbejdernavne uden PIN, leverandører og faste bestillinger) mellem dine enheder.</li>
+        </ul>
+        <p>Data overføres udelukkende via Apples krypterede forbindelser. Vi driver ikke egne servere.</p>
+
+        <h2>5. Dine rettigheder (GDPR)</h2>
+        <ul>
+            <li><strong>Indsigt</strong> — alle data kan ses direkte i appen</li>
+            <li><strong>Berigtigelse</strong> — ret oplysninger direkte i appen under Indstillinger</li>
+            <li><strong>Sletning</strong> — slet alle data ved at afinstallere appen og slette appens iCloud-data under Indstillinger → [dit navn] → iCloud → Administrer lagerplads</li>
+            <li><strong>Dataportabilitet</strong> — eksportér ordrer, temperaturlog og årsopgørelser som PDF eller CSV</li>
+            <li><strong>Klage</strong> — du kan klage til Datatilsynet: <a class="inline" href="https://www.datatilsynet.dk">www.datatilsynet.dk</a></li>
+        </ul>
+        <p>Kontakt os på <a class="inline" href="mailto:support@chmays.app">support@chmays.app</a> for at udøve dine rettigheder.</p>
+
+        <h2>6. Børn</h2>
+        <p>Order Guide er en app til erhvervsbrug, beregnet til voksne. Appen er ikke rettet mod børn under 13 år, og vi indsamler ikke bevidst data fra børn.</p>
+
+        <h2>7. Ændringer til denne politik</h2>
+        <p>Vi opdaterer denne politik, hvis vi ændrer måden, data behandles på. Den aktuelle version er altid tilgængelig på denne side.</p>
+
+        <h2>8. Kontakt</h2>
+        <div class="contact-card">
+            <p><strong>chmays.app</strong></p>
+            <p>E-mail: <a href="mailto:support@chmays.app">support@chmays.app</a></p>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ══════════════════════════════════ -->
+        <!-- PRIVACY — ENGLISH -->
+        <!-- ══════════════════════════════════ -->
         <div id="english"></div>
-        <h1 style="font-family:Georgia,serif; font-size:28px; margin-bottom:6px;">Privacy Policy</h1>
-        <p style="color:#8A8070; font-size:14px; margin-bottom:32px;">Order Guide · Last updated: May 2026</p>
+        <p class="section-title">Privacy Policy</p>
+        <p class="updated">Order Guide · Last updated: 25 November 2026</p>
 
         <h2>1. Who we are</h2>
-        <p>Order Guide is an app for restaurants and kitchens that helps manage purchasing, orders and staff communication.</p>
-        <p>If you have questions about this policy, please contact us at <a href="mailto:support@menuguard.org" style="color:#B54533;">support@menuguard.org</a>.</p>
+        <p>Order Guide is an app for restaurants and kitchens that helps with purchasing, orders, food safety checks and staff communication. The app is published by chmays.app.</p>
+        <p>If you have questions about this policy, please contact us at <a class="inline" href="mailto:support@chmays.app">support@chmays.app</a>.</p>
 
-        <h2>2. What data we collect</h2>
-        <p>Order Guide only collects data you enter yourself in the app:</p>
+        <h2>2. What data the app stores</h2>
+        <p>Order Guide only stores data you enter yourself in the app:</p>
         <ul>
-            <li><strong>Restaurant information</strong> — name, address, VAT number, phone number and head chef name</li>
-            <li><strong>Employee data</strong> — first name, initials, role and a 4-digit PIN code</li>
-            <li><strong>Order data</strong> — items, quantities, notes and photos you attach to orders</li>
-            <li><strong>Admin email</strong> — used solely to send a reset link if the PIN is forgotten</li>
+            <li><strong>Restaurant information</strong> — name, address, company registration (CVR) number, phone number, head chef's name and a contact email</li>
+            <li><strong>Employee data</strong> — name, initials, role and a 4-digit PIN code (stored encrypted and only on the device)</li>
+            <li><strong>Supplier data</strong> — name, email, phone, registration number and delivery days of your suppliers</li>
+            <li><strong>Order data</strong> — items, quantities, notes and order history</li>
+            <li><strong>Food safety records</strong> — temperature log and goods received with date, supplier, temperature and notes</li>
+            <li><strong>Invoices, budgets and stock</strong> — invoice details, budget per supplier, stock levels and annual stock counts</li>
+            <li><strong>Photos</strong> — pictures you take or choose yourself for items and deliveries</li>
             <li><strong>Subscription data</strong> — handled by Apple via the App Store and subject to Apple's privacy policy</li>
         </ul>
 
         <div class="highlight">
-            <p>📵 We do <strong>not</strong> collect information about your customers or guests. We do not collect location data, contacts, camera or microphone access beyond what you explicitly grant when attaching a photo to an order.</p>
+            <p>📵 We do <strong>not</strong> collect information about your customers or guests. We do not collect location data or contacts. The camera is only used when you scan a barcode or take a photo yourself. Face ID is only used to confirm it's you when you reset the admin PIN — we never get access to your Face ID data.</p>
         </div>
 
-        <h2>3. How we use your data</h2>
+        <h2>3. How data is used</h2>
         <ul>
-            <li>Display the restaurant name on the login screen</li>
-            <li>Allow employees to log in with a PIN code</li>
-            <li>Send orders to suppliers by email</li>
-            <li>Save and display shopping lists and order history</li>
-            <li>Sync data via iCloud to prevent data loss</li>
+            <li>Show the restaurant name on the login screen</li>
+            <li>Let employees log in with a PIN code</li>
+            <li>Send orders to your suppliers when you tap send (through your own email, SMS or WhatsApp app)</li>
+            <li>Save and show shopping lists, order history, temperature log and reports</li>
+            <li>Back up to your own iCloud so data isn't lost when you change device or reinstall</li>
         </ul>
-        <p>We <strong>never</strong> sell, share or transfer your data to third parties for marketing or analytics.</p>
+        <p>We <strong>never</strong> sell, share or transfer your data to third parties. There are no ads and no tracking in the app.</p>
 
         <h2>4. Where data is stored</h2>
         <ul>
-            <li><strong>On your device</strong> — in the app's local storage</li>
-            <li><strong>iCloud Key-Value Store</strong> — Apple's encrypted cloud storage used to sync data across your devices and protect against data loss</li>
+            <li><strong>On your device</strong> — in the app's local storage. PIN codes are stored encrypted and never leave the device.</li>
+            <li><strong>iCloud backup (CloudKit)</strong> — a backup of your data in your own private iCloud database at Apple. Only you have access — we can't see it. PIN codes are not included in the backup.</li>
+            <li><strong>iCloud Key-Value Store</strong> — Apple storage used to sync basic details (restaurant name, employee names without PINs, suppliers and recurring orders) between your devices.</li>
         </ul>
-        <p>Data is transmitted exclusively via Apple's encrypted connections. We do not operate our own servers.</p>
+        <p>Data is transferred only through Apple's encrypted connections. We do not operate our own servers.</p>
 
         <h2>5. Your rights (GDPR)</h2>
         <ul>
-            <li><strong>Access</strong> — find out what data we hold about you</li>
+            <li><strong>Access</strong> — all data can be seen directly in the app</li>
             <li><strong>Correction</strong> — correct information directly in the app under Settings</li>
-            <li><strong>Deletion</strong> — delete all data by uninstalling the app and clearing iCloud data under Settings → Apple ID → iCloud → Manage Storage</li>
-            <li><strong>Portability</strong> — export your order data via the app's export feature</li>
+            <li><strong>Deletion</strong> — delete all data by uninstalling the app and deleting the app's iCloud data under Settings → [your name] → iCloud → Manage Storage</li>
+            <li><strong>Portability</strong> — export orders, temperature log and annual stock counts as PDF or CSV</li>
+            <li><strong>Complaints</strong> — you can complain to the Danish Data Protection Agency: <a class="inline" href="https://www.datatilsynet.dk">www.datatilsynet.dk</a></li>
         </ul>
-        <p>Contact us at <a href="mailto:support@menuguard.org" style="color:#B54533;">support@menuguard.org</a> to exercise your rights.</p>
+        <p>Contact us at <a class="inline" href="mailto:support@chmays.app">support@chmays.app</a> to exercise your rights.</p>
 
         <h2>6. Children</h2>
-        <p>Order Guide is a B2B app intended for use by adults in a professional context. The app is not directed at children under 13 and we do not knowingly collect data from children.</p>
+        <p>Order Guide is a business app intended for adults. The app is not directed at children under 13, and we do not knowingly collect data from children.</p>
 
         <h2>7. Changes to this policy</h2>
-        <p>We will update this policy if we change our data practices. Significant changes will be notified in the app. The current version is always available on this page.</p>
+        <p>We update this policy if we change how data is handled. The current version is always available on this page.</p>
 
         <h2>8. Contact</h2>
         <div class="contact-card">
-            <p><strong>Order Guide</strong></p>
-            <p>Email: <a href="mailto:support@menuguard.org">support@menuguard.org</a></p>
+            <p><strong>chmays.app</strong></p>
+            <p>Email: <a href="mailto:support@chmays.app">support@chmays.app</a></p>
         </div>
 
-        <footer>
-            <p>© 2026 Order Guide · <a href="mailto:support@menuguard.org">support@menuguard.org</a></p>
-        </footer>
-
     </div>
+
+    <footer>
+        <p>© 2026 chmays.app · <a href="mailto:support@chmays.app">support@chmays.app</a></p>
+        <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Vilkår for brug / Terms of Use (Apple EULA)</a></p>
+    </footer>
 
 </div>
 
 <script>
     function showSection(id, clickedTab) {
-        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.section').forEach(function (s) { s.classList.remove('active'); });
         document.getElementById(id).classList.add('active');
-        document.querySelectorAll('.nav-tabs a').forEach(a => a.classList.remove('active'));
-        clickedTab.classList.add('active');
+        document.querySelectorAll('.nav-tabs a').forEach(function (a) { a.classList.remove('active'); });
+        if (clickedTab) { clickedTab.classList.add('active'); }
+        if (history.replaceState) { history.replaceState(null, '', '#' + id); }
         window.scrollTo(0, 0);
     }
 
-    // Auto-open correct tab based on URL hash
-    // e.g. index.html#privacy opens privacy tab directly
-    window.addEventListener('DOMContentLoaded', function() {
-        if (window.location.hash === '#privacy') {
-            showSection('privacy', document.querySelectorAll('.nav-tabs a')[1]);
+    function scrollToId(id) {
+        var el = document.getElementById(id);
+        if (el) { el.scrollIntoView({ behavior: 'smooth' }); }
+    }
+
+    // Open the right tab from the URL, e.g. index.html#privacy
+    window.addEventListener('DOMContentLoaded', function () {
+        var tabs = document.querySelectorAll('.nav-tabs a');
+        if (window.location.hash === '#privacy' || window.location.hash === '#english') {
+            showSection('privacy', tabs[1]);
+            if (window.location.hash === '#english') { setTimeout(function () { scrollToId('english'); }, 50); }
+        } else if (window.location.hash === '#support-en') {
+            setTimeout(function () { scrollToId('support-en'); }, 50);
         }
     });
 </script>
